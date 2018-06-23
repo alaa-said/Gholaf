@@ -1,0 +1,162 @@
+header{
+    height: 95vh;
+    /* width: 100vw; */
+    /* width: calc(100vw - 17px); */
+    background-image: url("/assets/header.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle; 
+  
+    
+}
+.table{
+    height: 90vh;
+    width: 70vw;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    margin:0 auto;
+}
+
+
+.cell{
+display: table-cell;
+vertical-align: middle;
+}
+header h1{
+  font-family:title;
+  font-weight: bold;
+  font-size:170px; 
+}
+header p{
+    font-family: paragrafs;
+    font-size: 30px;
+}
+input{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.input-group-prepend{
+    width: 100%;
+}
+// input{
+//     width: 100%;
+// }
+p,input,.input-group-text{
+    font-family:'Noto Naskh Arabic';
+    font-size: 20px;
+  }
+  .input-group-text,.input-group-prepend{
+      background-color: #187676;
+      border: 0;
+  } 
+  .input-group-prepend{
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+
+  }
+
+  @media (max-width: 570px) {
+    header {
+        padding: 50px 0px;
+        h1{
+            font-size: 100px;
+        }
+        p{
+            font-size: 20px;
+        }
+        input{
+            font-size: 10px;
+        }
+    }
+}
+
+.row{
+	justify-content: center;
+}
+h6{
+	font-family:  paragrafs;
+	display:inline-block;
+}
+h5{
+	font-family:  paragrafs;
+	display: inline;
+    margin-left: 33px;
+}
+.card.mb-4{
+	border: none;
+}
+.fa-star:before{
+	color:yellow;
+}
+.overlay .far.fa-heart{
+	font-size: 2rem;
+    color: #177777;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+.image-container{
+    position: relative;
+}
+img{
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.overlay{
+	transition: .5s ease;
+  	opacity: 0;
+ 	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.image-container:hover img {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.image-container:hover .overlay {
+  opacity: 1;
+}
+button{
+	position: absolute;
+    top: 290px;
+    width: 100%;
+    left: 0;
+    background-color:#177777;
+    color:white;
+    height:60px;
+    font-size:30px;
+}
+img{
+	height:350px;
+}
+.card-body.p-0{
+	text-align:right;
+}
+.rate{
+	// display:inline-block;
+	float:left;
+}
+
+.addToCart{
+	display:none;
+}
+@media (max-width: 992px){
+ 	.addToCart{
+ 		// display:inline-block;
+ 		float:left;
+ 		color:#177777;
+ 		font-size:20px;
+ 	}
+ 	.overlay{
+ 		display:none;
+ 	}
+ }

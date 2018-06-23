@@ -1,0 +1,46 @@
+
+<section style="overflow-x:auto;" class="cart mt-5">
+<div class="container ">
+  <table class="text-center mb-5">
+      <thead>
+          <tr class="text-center">
+            <th class="text-center"> حذف </th>
+            <th> كود الكتاب </th>
+            <th> السعر </th>
+            <th> الكمية </th>
+            <th> الكتاب </th>
+          </tr>
+          </thead>
+          <tbody  *ngFor=" let cart of cartData">
+              <tr>
+                <td><i class="fas fa-trash-alt"></i></td>
+                <td>{{cart.id}}</td>
+                <td>
+                  <div class="text-right mar">
+                      <span>  {{cart.pricepdf}} EGP تحميل الكتاب </span><input type="radio" name="download" value="download"/><br/>
+                      <span> {{cart.pricehard}} EGP الحصول على نسخة </span><input type="radio" name="pdf" value="pdf"/>
+                  </div>
+                </td>
+                <td><div class="border p-1"> {{cart.quntity}} </div></td>
+                <td><img src="{{cart.src}}" class="img-fluid"/></td>
+              </tr>
+          </tbody>
+  </table>
+
+  <div class="col-sm-12 mb-5 text-right ">
+      <p class="addColor"> ارسال كهدية</p> <input type="checkbox"/>
+      <p class="text-secondary">    سيتم اضافة 40 جنية <span>*</span>  </p>
+  </div>
+
+  <div class="col-sm-12 mb-5 text-center ">
+      <div class="col-sm-3 addBorder py-3">
+        <span class="addColor">120 EGP</span><span class="text-secondary"> ا جمالى المبلغ</span>
+      </div>
+  </div>
+
+  <div class="col-sm-3 mb-2 text-center ">
+    <!-- btn-block -->
+    <button class="btn y  btn-block btn-lg" routerLink="/payment"> متابعة الشراء </button>
+</div>
+</div>   
+</section>
